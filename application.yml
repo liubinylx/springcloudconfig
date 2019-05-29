@@ -6,9 +6,3 @@ spring:
       naming:
         physical-strategy: com.nari.parent.productservice.util.HibernatePhysicalNamingNamingStrategy
     show-sql: false
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://lliu:bin@localhost:8320/eureka
