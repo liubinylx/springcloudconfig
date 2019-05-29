@@ -3,8 +3,6 @@ spring:
     open-in-view: true
     hibernate:
       ddl-auto: none
-      naming:
-        physical-strategy: com.nari.parent.productservice.util.HibernatePhysicalNamingNamingStrategy
     show-sql: true
 logging:
   level:
