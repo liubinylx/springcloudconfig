@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: productservice
+  jpa:
+    database: h2
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/testdpro
+    username: sa
+    password:
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: localhost:2200
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8320/eureka
+logging:
+  level:
+    org:
+      springframework: INFO
+    com:
+      nari: INFO
+foo: I'm default Value
